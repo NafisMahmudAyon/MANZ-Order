@@ -75,7 +75,7 @@ function OrderList() {
                               {detail.payment}
                             </span>
                           </td>
-                          <td className="px-6 py-4 text-right">
+                          <td className="px-6 py-4 text-right text-gray-600 hover:text-gray-900 font-bold">
                             <Link
                               to={`order/${detail.id}/`}
                               style={{ marginRight: "10px" }}
