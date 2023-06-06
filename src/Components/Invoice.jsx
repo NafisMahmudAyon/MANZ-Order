@@ -100,7 +100,7 @@ const Invoice = () => {
               <p>number: {details.payPhone}</p>
               <p>Transaction ID: {details.transactionID}</p>
             </div>
-            <div className="text-lg font-semibold pt-3 text-yellow-400 sm:block lg:hidden xl:hidden">
+            <div className="text-lg font-semibold pt-3 text-yellow-400 sm:block md:block lg:hidden xl:hidden">
               Thanks for Order.
             </div>
           </div>
