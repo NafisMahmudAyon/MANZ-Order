@@ -43,7 +43,7 @@ const Invoice = () => {
       <div className="w-[80%] sm:w-[90%] md:w-[90%] my-14 sm:my-8 border sm:border-none py-10 sm:py-2 max-h-[80%]">
         <div className=" flex flex-col items-center">
           <img
-            src="/4x/lg.png"
+            src="/lg.png"
             alt=""
             className="cover w-48 sm:w-32 md:w-36 mb-10"
           />
