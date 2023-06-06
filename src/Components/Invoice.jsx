@@ -89,9 +89,9 @@ const Invoice = () => {
         <div className="w-full px-20 sm:px-0 flex sm:flex-col-reverse justify-between items-start text-white pt-6">
           {/* <div className="w-[80%]"> */}
           <div className="sm:px-3">
-            <div className="text-lg font-semibold pt-3 text-yellow-400  sm:hidden md:hidden lg:block xl:block">
+            {/* <div className="text-lg font-semibold pt-3 text-yellow-400  sm:hidden md:hidden lg:block xl:block">
               Thanks for Order.
-            </div>
+            </div> */}
             <div className="text-base">
               <p className="text-lg font-semibold">Payment Info:</p>
               <p className="">
