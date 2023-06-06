@@ -53,7 +53,9 @@ const Invoice = () => {
           <div className="flex sm:flex-col  justify-between items-start">
             <div>
               <h3 className=" text-xl font-bold">Invoice to:</h3>
-              <h4 className=" text-lg py-2 font-semibold">{details.customerName}</h4>
+              <h4 className=" text-lg py-2 font-semibold">
+                {details.customerName}
+              </h4>
               <address className="w-3/4 flex gap-2 sm:w-full py-2 font-medium">
                 <span>🏠: </span> <span>{details.address}</span>
               </address>
@@ -86,8 +88,10 @@ const Invoice = () => {
         </div>
         <div className="w-full px-20 sm:px-0 flex sm:flex-col-reverse justify-between items-start text-white pt-6">
           {/* <div className="w-[80%]"> */}
-          <div className="">
-            <div className="text-lg font-semibold">Thanks for Order.</div>
+          <div className="sm:px-3">
+            <div className="text-lg font-semibold sm:hidden">
+              Thanks for Order.
+            </div>
             <div className="text-base">
               <p className="text-lg font-semibold">Payment Info:</p>
               <p className="">
@@ -96,18 +100,21 @@ const Invoice = () => {
               <p>number: {details.payPhone}</p>
               <p>Transaction ID: {details.transactionID}</p>
             </div>
+            <div className="text-lg font-semibold pt-3 text-yellow-400 sm:block lg:hidden xl:hidden">
+              Thanks for Order.
+            </div>
           </div>
           <div className="w-[40%] text- flex flex-col sm:w-full justify-center">
-            <div className="flex items-center sm:gap-2 justify-between sm:justify-start px-4">
+            <div className="flex items-center sm:gap-2 justify-between sm:justify-start px-4 sm:px-3">
               <div className="pr-20 font-medium sm:pr-0">Sub Total:</div>
               <div className="">{details.subTotal}</div>
             </div>
-            <div className="flex items-center sm:gap-2 justify-between sm:justify-start px-4">
+            <div className="flex items-center sm:gap-2 justify-between sm:justify-start px-4 sm:px-3">
               <div className="pr-20  font-medium sm:pr-0">Tax:</div>
               <div className="">{details.tax}</div>
             </div>
 
-            <div className="flex items-center bg-yellow-400 py-1 mt-6 text-black text-xl font-semibold justify-between px-4">
+            <div className="flex items-center bg-yellow-400 py-1 mt-6 text-black text-xl font-semibold justify-between sm:justify-start sm:gap-2 px-4 sm:px-3 sm:mb-6">
               <div className="">Total:</div>
               <div className="">{details.total}</div>
             </div>
@@ -122,23 +129,29 @@ const Invoice = () => {
           </div>
           {/* </div> */}
         </div>
-        <div className="w-full text-white border-t border-yellow-400 mt-20">
-          <div className="flex sm:flex-col py-4 pl-36 sm:pl-8 md:pl-10">
-            <div className="px-2">017X-XXXXXXX</div>
-            <div className="px-2 text-yellow-400 font-semibold sm:hidden">
-              |
+        <div className="w-full text-white border-t border-yellow-400 mt-20 sm:mt-6">
+          <div className="flex sm:flex-col py-4 pl-36 sm:pl-0 md:pl-10">
+            <div className="px-2">
+              <span>📞</span> 017X-XXXXXXX
             </div>
-            <div className="px-2">Dhaka, Bangladesh</div>
             <div className="px-2 text-yellow-400 font-semibold sm:hidden">
               |
             </div>
             <div className="px-2">
+              <span>🏬</span> Dhaka, Bangladesh
+            </div>
+            <div className="px-2 text-yellow-400 font-semibold sm:hidden">
+              |
+            </div>
+            <div className="px-2">
+              <span>🌐</span>
               <a
                 href="https://www.facebook.com/manzfashionview"
                 className="hover:text-yellow-500 hover:underline font-semibold"
               >
+                {" "}
                 FB Page
-              </a>{" "}
+              </a>
             </div>
           </div>
         </div>
