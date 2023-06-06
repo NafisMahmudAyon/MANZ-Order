@@ -40,7 +40,7 @@ const Invoice = () => {
 
   return (
     <div className="w-[100%] min-h-[100vh] bg-gray-700 flex justify-center ">
-      <div className="w-[80%] sm:w-[90%] my-14 sm:my-8 border sm:border-none py-10 sm:py-2 max-h-[80%]">
+      <div className="w-[80%] sm:w-[90%] md:w-[90%] my-14 sm:my-8 border sm:border-none py-10 sm:py-2 max-h-[80%]">
         <div className=" flex flex-col items-center">
           <img src="/4x/lg.png" alt="" className="cover w-32 mb-10" />
         </div>
@@ -89,7 +89,7 @@ const Invoice = () => {
         <div className="w-full px-20 sm:px-0 flex sm:flex-col-reverse justify-between items-start text-white pt-6">
           {/* <div className="w-[80%]"> */}
           <div className="sm:px-3">
-            <div className="text-lg font-semibold sm:hidden md:hidden lg:block xl:block">
+            <div className="text-lg font-semibold pt-3 text-yellow-400  sm:hidden md:hidden lg:block xl:block">
               Thanks for Order.
             </div>
             <div className="text-base">
