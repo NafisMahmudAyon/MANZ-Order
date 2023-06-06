@@ -80,7 +80,7 @@ const Invoice = () => {
             </div>
           </div>
           <div className="w-full flex justify-center pt-10">
-            <div className="w-[90%]">
+            <div className="w-[90%] sm:w-full">
               <ProductList id={id} />
             </div>
           </div>

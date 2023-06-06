@@ -18,7 +18,7 @@ const ProductList = (props) => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="w-full min-h-[400px] text-sm text-left text-gray-400 border-2 border-solid border-gray-300">
+      <table className="w-full min-h-[400px] sm:min-h-[330px] text-sm text-left text-gray-400 border-2 border-solid border-gray-300">
         <thead className="text-sm  uppercase  bg-gray-900 border-gray-900 border-2 text-gray-400">
           <tr>
             <th scope="col" className="px-6 py-3">
