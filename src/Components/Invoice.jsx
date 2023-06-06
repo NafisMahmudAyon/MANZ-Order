@@ -49,7 +49,7 @@ const Invoice = () => {
             Invoice
           </h1>
         </div>
-        <div className="px-20 mt-6 sm:px-3 md:px-0  text-slate-200">
+        <div className="px-20 mt-6 sm:px-3 md:px-6  text-slate-200">
           <div className="flex sm:flex-col  justify-between items-start">
             <div>
               <h3 className=" text-xl font-bold">Invoice to:</h3>
@@ -86,7 +86,7 @@ const Invoice = () => {
           </div>
           {/* after product details  */}
         </div>
-        <div className="w-full px-20 sm:px-0 flex sm:flex-col-reverse justify-between items-start text-white pt-6">
+        <div className="w-full px-20 sm:px-0 md:px-6 flex sm:flex-col-reverse justify-between items-start text-white pt-6">
           {/* <div className="w-[80%]"> */}
           <div className="sm:px-3">
             {/* <div className="text-lg font-semibold pt-3 text-yellow-400  sm:hidden md:hidden lg:block xl:block">
@@ -129,7 +129,7 @@ const Invoice = () => {
           </div>
           {/* </div> */}
         </div>
-        <div className="w-full text-white border-t border-yellow-400 mt-20 sm:mt-6">
+        <div className="w-full text-white border-t border-yellow-400 mt-20 sm:mt-6 md:mt-10">
           <div className="flex sm:flex-col py-4 pl-36 sm:pl-0 md:pl-10">
             <div className="px-2">
               <span>📞</span> 017X-XXXXXXX
