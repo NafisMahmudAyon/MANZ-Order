@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import OrderList from "./Components/orderList";
+// import OrderList from "./Components/orderList";
 import Invoice from "./Components/Invoice";
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       </nav> */}
 
       <Routes>
-        <Route index element={<OrderList />} />
-        <Route path="order/:id/" element={<Invoice />} />
+        {/* <Route index element={<OrderList />} /> */}
+        <Route path="/:id/" element={<Invoice />} />
       </Routes>
     </BrowserRouter>
   );
