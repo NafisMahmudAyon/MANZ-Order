@@ -9,26 +9,28 @@ function OrderList() {
   }, []);
 
   function getOrder() {
-    axios.get("https://manz-orders-server.onrender.com/dashboard").then(function (response) {
-      console.log(response.data);
-      setDetails(response.data);
-    });
+    axios
+      .get("https://manz-orders-server.onrender.com/dashboard")
+      .then(function (response) {
+        console.log(response.data);
+        setDetails(response.data);
+      });
   }
   return (
     <>
-      <div className="w-[100%] h-[100vh] flex flex-col bg-gray-700 justify-center items-center pt-10">
-        <div className=" flex flex-col items-center">
-          <img src="/4x/lg.png" alt="" className="cover w-48 mb-10" />
+      <div className="w-[100%] min-h-[100vh] flex flex-col bg-gray-700 justify-center items-center">
+        <div className=" flex w-[90%] flex-col items-center pt-10">
+          <img src="/4x/lg.png" alt="" className="cover w-48 sm:w-32 md:w-36  mb-10" />
         </div>
         <div className="w-[90%] h-[80%]  flex justify-center py-3 ">
           <div className="overflow-x-auto">
-            <table className="w-full max-h-[100%] bg-black table-auto block text-sm mx-auto text-left text-gray-500 ">
+            <table className="w-full bg-black table-auto block text-sm mx-auto text-left text-gray-500 ">
               <thead className="text-xs  uppercase  bg-gray-900 text-gray-400">
                 <tr>
                   <th scope="col" className="px-6 py-3">
                     Order No.
                   </th>
-                  <th colSpan="2" className="px-6 py-3">
+                  <th colSpan="2" scope="col" className="px-6 py-3">
                     Customer Name
                   </th>
                   <th scope="col" className="px-6 py-3">
@@ -53,10 +55,7 @@ function OrderList() {
                 {Array.isArray(details)
                   ? details.map((detail) => {
                       return (
-                        <tr
-                          className="bg-white border-b h-5"
-                          key={detail.id}
-                        >
+                        <tr className="bg-white border-b h-5" key={detail.id}>
                           <th className="px-6 py-4 font-medium whitespace-nowrap ">
                             {detail.orderNo}
                           </th>

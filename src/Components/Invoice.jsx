@@ -42,7 +42,11 @@ const Invoice = () => {
     <div className="w-[100%] min-h-[100vh] bg-gray-700 flex justify-center ">
       <div className="w-[80%] sm:w-[90%] md:w-[90%] my-14 sm:my-8 border sm:border-none py-10 sm:py-2 max-h-[80%]">
         <div className=" flex flex-col items-center">
-          <img src="/4x/lg.png" alt="" className="cover w-32 mb-10" />
+          <img
+            src="/4x/lg.png"
+            alt=""
+            className="cover w-48 sm:w-32 md:w-36 mb-10"
+          />
         </div>
         <div className=" bg-yellow-300 w-[100%] h-8 flex justify-end sm:justify-center ">
           <h1 className="uppercase h-8 text-2xl  text-black bg-white font-bold text-right px-8  inline-block mr-8 sm:mr-0">
