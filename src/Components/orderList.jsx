@@ -18,11 +18,11 @@ function OrderList() {
   }
   return (
     <>
-      <div className="w-[100%] min-h-[100vh] flex flex-col bg-gray-700 justify-center items-center">
-        <div className=" flex w-[90%] flex-col items-center pt-10">
+      <div className="w-[100%] min-h-[100vh] flex flex-col bg-gray-700 items-center">
+        <div className="mx-auto pt-10">
           <img src="/4x/lg.png" alt="" className="cover w-48 sm:w-32 md:w-36  mb-10" />
         </div>
-        <div className="w-[90%] h-[80%]  flex justify-center py-3 ">
+        <div className="w-[90%]  flex justify-center py-3 ">
           <div className="overflow-x-auto">
             <table className="w-full bg-black table-auto block text-sm mx-auto text-left text-gray-500 ">
               <thead className="text-xs  uppercase  bg-gray-900 text-gray-400">
