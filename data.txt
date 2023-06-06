@@ -1,0 +1,23 @@
+order no 
+customer name
+order date
+expected date
+delivery date
+status
+payment
+address
+phone
+invoice no
+total
+payment method
+payNumber
+transaction
+trackid
+
+product => 
+            image
+            name
+            price
+            quantity
+            total
+

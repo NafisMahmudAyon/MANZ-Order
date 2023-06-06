@@ -1,0 +1,51 @@
+{
+    "dashboard": [
+        {
+            "id": "1000",
+            "orderNo": "1000",
+            "customerName": "Name",
+            "orderDate": "01/01/2023",
+            "expectedDate": "05/01/2023",
+            "deliveryDate": "03/01/2023",
+            "status": "Processing",
+            "payment": "Paid",
+            "address": "Baldipukur Bazar, Baldipukur, Mithapukur, Rangpur",
+            "phone": "017X-XXXXXXX",
+            "invoiceNo": "1000",
+            "total": "2000",
+            "payMethod": "Bkash",
+            "payPhone": "017X-XXXXXXXX",
+            "transactionID": "ABC123",
+            "trackID": "1245",
+            "subTotal": "2000",
+            "tax": "0.00"
+            
+        }
+    ],
+    "products-1000": [
+        {
+            "id": 1,
+            "image": "https://i.ibb.co/nsMn8s2/pdt.png",
+            "name": "Product 1",
+            "price": "200",
+            "quantity": "1",
+            "total": "200"
+        },
+        {
+            "id": 2,
+            "image": "/pdt.png",
+            "name": "Product 2",
+            "price": "200",
+            "quantity": "3",
+            "total": "200"
+        },
+        {
+            "id": 3,
+            "image": "/pdt.png",
+            "name": "Product 3",
+            "price": "200",
+            "quantity": "4",
+            "total": "200"
+        }
+    ]
+}
