@@ -18,9 +18,13 @@ function OrderList() {
   }
   return (
     <>
-      <div className="w-[100%] min-h-[100vh] flex flex-col bg-gray-700 items-center">
+      <div className="min-w-[100vw] sm:w-[100vw] min-h-[100vh] flex flex-col bg-gray-700 items-center">
         <div className="mx-auto pt-10">
-          <img src="/4x/lg.png" alt="" className="cover w-48 sm:w-32 md:w-36  mb-10" />
+          <img
+            src="/4x/lg.png"
+            alt=""
+            className="cover w-48 sm:w-32 md:w-36  mb-10"
+          />
         </div>
         <div className="w-[90%]  flex justify-center py-3 ">
           <div className="overflow-x-auto">
@@ -56,21 +60,27 @@ function OrderList() {
                   ? details.map((detail) => {
                       return (
                         <tr className="bg-white border-b h-5" key={detail.id}>
-                          <th className="px-6 py-4 font-medium whitespace-nowrap ">
-                            {detail.orderNo}
-                          </th>
+                          <td className="">
+                            <Link
+                              to={`order/${detail.id}/`}
+                              style={{ marginRight: "10px" }}
+                              className="hover:text-yellow-400 px-6 py-4 font-medium whitespace-nowrap "
+                            >
+                              {detail.orderNo}
+                            </Link>
+                          </td>
                           <td colSpan="2" className="px-6 py-4">
                             {detail.customerName}
                           </td>
                           <td className="px-6 py-4">{detail.orderDate}</td>
                           <td className="px-6 py-4">{detail.expectedDate} </td>
                           <td className="px-6 py-4">
-                            <span className="p-1 rounded-md uppercase text-red-500 font-bold bg-red-300">
+                            <span className="px-2 py-1 rounded-md uppercase text-red-500 font-bold bg-red-300 block">
                               {detail.status}
                             </span>
                           </td>
                           <td className="px-6 py-4">
-                            <span className="p-1 rounded-md uppercase text-emerald-500 font-bold bg-emerald-300">
+                            <span className="px-2 py-1 rounded-md uppercase text-emerald-700 font-bold bg-emerald-300">
                               {detail.payment}
                             </span>
                           </td>
@@ -78,6 +88,7 @@ function OrderList() {
                             <Link
                               to={`order/${detail.id}/`}
                               style={{ marginRight: "10px" }}
+                              className="px-6 py-4 text-right text-gray-600 hover:text-yellow-400 font-bold"
                             >
                               Details
                             </Link>
